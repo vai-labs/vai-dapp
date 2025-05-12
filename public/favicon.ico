@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .logo-text { font-family: Arial, sans-serif; font-weight: bold; }
+    .primary { fill: #4F46E5; }
+    .secondary { fill: #7B68EE; }
+    .tertiary { fill: #8A2BE2; }
+    .grid { stroke: #6366F1; stroke-width: 0.5; opacity: 0.1; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#111827" />
+  
+  <!-- Grid pattern -->
+  <g>
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" class="grid" />
+      </pattern>
+    </defs>
+    <rect width="800" height="400" fill="url(#grid)" />
+  </g>
+  
+  <!-- Abstract shapes -->
+  <circle cx="400" cy="200" r="120" fill="none" stroke="#6366F1" stroke-width="2" opacity="0.7" />
+  <circle cx="400" cy="200" r="80" fill="none" stroke="#8A2BE2" stroke-width="2" opacity="0.8" />
+  <circle cx="400" cy="200" r="40" fill="none" stroke="#7B68EE" stroke-width="2" opacity="0.9" />
+  
+  <!-- Random connections to simulate blockchain -->
+  <g>
+    <line x1="400" y1="200" x2="450" y2="100" stroke="#4F46E5" stroke-width="1.5" />
+    <line x1="400" y1="200" x2="500" y2="250" stroke="#7B68EE" stroke-width="1.5" />
+    <line x1="400" y1="200" x2="300" y2="300" stroke="#8A2BE2" stroke-width="1.5" />
+    <line x1="400" y1="200" x2="250" y2="150" stroke="#4F46E5" stroke-width="1.5" />
+    <line x1="400" y1="200" x2="550" y2="180" stroke="#8A2BE2" stroke-width="1.5" />
+    
+    <circle cx="450" cy="100" r="8" class="primary" />
+    <circle cx="500" cy="250" r="8" class="secondary" />
+    <circle cx="300" cy="300" r="8" class="tertiary" />
+    <circle cx="250" cy="150" r="8" class="primary" />
+    <circle cx="550" cy="180" r="8" class="tertiary" />
+  </g>
+  
+  <!-- VAI Logo -->
+  <g transform="translate(400, 200)">
+    <polygon points="0,-30 26,15 -26,15" fill="#6366F1" />
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#6366F1" stroke-width="4" />
+  </g>
+  
+  <!-- VAI Text -->
+  <text x="400" y="280" text-anchor="middle" class="logo-text" fill="white" font-size="48">VAI</text>
+  <text x="400" y="320" text-anchor="middle" fill="#A5B4FC" font-size="16">Value AI Token Ecosystem</text>
+</svg>
